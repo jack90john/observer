@@ -10,9 +10,9 @@ import observer.Observer;
  * Version: 1.0.0
  */
 public interface Subject {
-    public void registerObserver(Observer observer);    // 注册观察者
+    void registerObserver(Observer observer);    // 注册观察者
 
-    public void removeObserver(Observer observer);      //删除观察者
+    void removeObserver(Observer observer);      //删除观察者
 
-    public void notifyObservers();      //当主题改变时，调用这个方法通知所有观察者
+    void notifyObservers();      //当主题改变时，调用这个方法通知所有观察者
 }
